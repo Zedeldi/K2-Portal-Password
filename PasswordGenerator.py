@@ -18,9 +18,10 @@ class PasswordGenerator:
 
     @staticmethod
     def GetCharIndex(testChar: str) -> int:
-        num = "ETOVCFNRSDJKWXGHBLMYZIAPQU".index(testChar)
-        if num < 0:
-            raise Exception(f"Invalid character ({testChar}) in token")
+        try:
+            num = "ETOVCFNRSDJKWXGHBLMYZIAPQU".index(testChar)
+        except ValueError as err:
+            raise Exception(f"Invalid character ({testChar}) in token") from err
         return num + 1
 
     @staticmethod

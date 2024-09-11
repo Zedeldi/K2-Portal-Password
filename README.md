@@ -8,9 +8,13 @@ K2 Portal Password Generator.
 
 Generate daily passwords for [K2 portals](https://www.k2ms.com/k2-portal).
 
+For basic configuration changes, use `OSAccessLevel.PasswordOfTheDay`.
+
+For engineer mode and the local Windows account, use `OSAccessLevel.Full` and pass the on-screen token.
+
 ### C#
 
-`PasswordGenerator.cs` extracted from `Shell.exe` using `dnSpy`, with an added `Main` entry-point and `OSAccessLevel` enum included.
+`PasswordGenerator.cs` decompiled from `Shell.exe` using `dnSpy`, with an added `Main` entry-point and `OSAccessLevel` enum included.
 
 The method for generating passwords can be found in `PasswordGenerator.GeneratePassword`.
 

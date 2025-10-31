@@ -6,7 +6,7 @@ K2 Portal Password Generator.
 
 ## Description
 
-Generate daily passwords for [K2 portals](https://www.k2ms.com/k2-portal).
+Generate daily passwords for [K2 portals](https://www.k2ms.com/k2-athena).
 
 For basic configuration changes, use `OSAccessLevel.PasswordOfTheDay`.
 
